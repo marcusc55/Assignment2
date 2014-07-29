@@ -1,0 +1,10 @@
+<h1> Followers </h1>
+{% if user_list %}
+    <ul>
+    {% for user in user_list %}
+        <li>{{user.from_user}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No followers are available.</p>
+{% endif %}

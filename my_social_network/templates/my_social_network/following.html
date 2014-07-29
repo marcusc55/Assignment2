@@ -1,0 +1,10 @@
+<h1> Following </h1>
+{% if user_list %}
+    <ul>
+    {% for user in user_list %}
+        <li>{{user.to_user}}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>You are not following any users.</p>
+{% endif %}
